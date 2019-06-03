@@ -1,0 +1,414 @@
+
+/*设置最小宽度和高度，防止缩放过多页面变形*/
+html,body,.section {
+	min-height: 600px;
+	min-width: 1000px;
+}
+
+
+#fp-nav ul li a span {
+	background-color: gray;
+}
+
+/*第一屏制作*/
+.section1 {
+	background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+	position: relative;/*不写也可以，插件已自动添加了*/
+}
+.fly {
+	position: absolute;
+	right: 20%;
+	top: 10%;
+}
+.sofa {
+	position: absolute;
+	right: 730px;
+	top: 108px;
+}
+/*第二屏制作*/
+.section2 {
+	background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+	z-index: 2;
+}
+.computer {
+	width: 990px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	/*background: rgba(0,0,0,.3);*/
+}
+.search {
+	width: 222px;
+	height: 45px;
+	background: url(../images/search.png) no-repeat;
+	right: -30px;
+	bottom: 300px;
+	position: absolute;
+	display: none;
+}
+.search-words {
+	right: 32px;
+	top: 5px;
+	position: absolute;
+	opacity: 0;
+}
+.search-02-1 {
+	position: absolute;
+	bottom: 300px;
+	right: 370px;
+	display: none;  /* 这个不要淡入淡出，里面显示或者隐藏 */
+}
+.sofa-goods {
+	height: 100px;
+	position: absolute;
+	bottom: 217px;
+	right: 270px;
+	display: none;
+}
+.words-01,.words-02 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 530px;
+}
+.words-02 {
+	opacity: 0;
+}
+
+.sofa-2 {
+	position: absolute;
+	bottom: 346px;
+	left: 395px;
+	width: 100px;
+	display: none;
+	z-index: 10;
+}
+.cover {
+	position: absolute;
+	bottom: 334px;
+    right: 496px;
+    width: 102px;
+    height: 90px;
+    z-index: 5;
+    background-color: #fff;
+    display: none; 
+}
+/*第三屏制作*/
+.section3 {
+	background: #ef674d;
+}
+.main {
+	position: absolute;
+	width: 700px;
+	height: 500px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+	background: url(../images/main.png) no-repeat center center;
+}
+.select {
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	right: 8px;
+}
+.sofa-3-1,.sofa-3-2 {
+	position: absolute;
+	left: 115px;
+	bottom: 200px;
+	display: none;
+} 
+.sofa-3-2 {
+	z-index: 20;
+}
+.img {
+	position: absolute;
+	top: 0;
+}
+.img-a {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+.btn {
+	position: absolute;
+	bottom: 10px;
+}
+.btn-a {
+	position: absolute;
+	bottom: 10px;
+	opacity: 0;
+}
+/*第四屏制作*/
+.section4 {
+	background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+
+}
+.cloud {
+	position: absolute;
+	left: 50%;
+	bottom: 470px;
+}
+.word {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 450px;
+}
+.word-4 {
+	opacity: 0;
+}
+.car {
+	position: absolute;
+	width: 450px;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	/*background-color: pink;*/
+}
+.car-sofa {
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1; /*让沙发叠加在购物车下面，像是装在购物车里*/
+	display: none;
+}
+.note {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 130px;
+	opacity: 0;
+}
+.note-img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 70px;
+}
+/*第五屏制作*/
+.section5 {
+	background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+	/*overflow: hidden;*/
+	z-index: 1;
+}
+.card-5 {
+	position: absolute;
+	left: 20%;
+	bottom: 200px;
+	z-index: 10;
+}
+.order-5 {
+	position: absolute;
+	left: 27%;
+	bottom: 270px;
+}
+.sofa-5 {
+	position: absolute;
+	left: 25%;
+	bottom: 666px;
+	display: none;
+}
+.mouse {
+	position: absolute;
+	right: 20%;
+	bottom: 200px;
+}
+.hand-5 {
+	position: absolute;
+	right: 25%;
+	bottom: -400px;
+	display: none;
+}
+.over-flow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.word-5 {
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+/*第六屏制作*/
+.section6 {
+	background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+.box-6 {
+	position: absolute;
+	left: 123px;
+	bottom: 500px;
+	z-index: 50;
+}
+.car-6 {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: 60;
+}
+.cloud-6 {
+	position: absolute;
+	left: 50%;
+	bottom: 470px;
+	animation: cloud 50s linear infinite;
+}
+.pop-6 {
+	position: absolute;
+	right: 48%;
+	bottom: 119px;
+	display: none;
+	z-index: 10;
+}
+.man-6 {
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	height: 100px;
+}
+.women-6 {
+	position: absolute;
+	right: 315px;
+	bottom: 116px;
+	height: 123px;
+	display: none;
+}
+.please-6 {
+	position: absolute;
+	right:489px;
+	bottom: 400px;
+	z-index: 40;
+	display: none;
+}
+.word-6 {
+	position: absolute;
+	left: 10%;
+	bottom: 479px;
+	display: none;
+}
+/*第七屏制作*/
+.section7 {
+	background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.star-7 {
+	position: absolute;
+	background: url(../images/star.png) no-repeat;
+	left: 50%;
+	bottom: 439px;
+	margin-left: -295px;
+	width: 0;
+	height: 20px;
+	background-size: 97px;
+}
+.word-7 {
+	position: absolute;
+	left: 50%;
+	bottom: 382px;
+	margin-left: -285px;
+	display: none;
+}
+/*第八屏制作*/
+.section8 {
+	background: url(../images/ksgw.png) center center;
+}
+.shopping-8 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 365px;
+}
+.btn-8-2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.again-8 {
+	position: absolute;
+	left: 50%;
+	margin-left: 240px;
+	bottom: 403px;
+}
+.hand-8 {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+/*直接进入购物中心*/
+#go {
+	position: fixed;
+	top:5%;
+	right: 5%;
+	z-index: 100;
+}
+#next {
+	position: fixed;
+	bottom: 15%;
+	right: 5%;
+	z-index: 100;
+	animation: fly3 2s linear infinite;
+}
+
+@keyframes fly3 { 
+	0% {
+		bottom: 12%; 
+	}
+	50% {
+		bottom: 15%;
+	}
+	100% {
+		bottom: 12%;
+	}
+}
+/*动画部分*/
+/*第一屏*/
+
+.updown1 {
+	animation: fly1 3s linear infinite; 
+}
+@keyframes fly1 { 
+	0% {
+		top:10%;
+	}
+	50% {
+		top:15%;
+	}
+	100% {
+		top:10%;
+	}
+}
+.updown2 {
+	animation: fly2 3s linear infinite; 
+}
+@keyframes fly2 {
+	0% {
+		top:108px;
+	}
+	50% {
+		top:90px;
+	}
+	100% {
+		top:108px;
+	}
+}
+/*第四屏云朵*/
+.cloud {
+	animation: cloud 30s linear infinite;
+}
+@keyframes cloud {
+	0% {
+		left: 50%
+	}
+	50% {
+		left: -10%;
+	}
+	100% {
+		left: 50%;
+	}
+}
